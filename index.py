@@ -4,7 +4,7 @@ print()
 import cgi
 form = cgi.FieldStorage()
 # pageId = form["id"].value
-pageId = "javascript" if "id" not in form else form["id"].value
+# pageId = "javascript" if "id" not in form else form["id"].value
 if 'id' in form:
   pageId = form['id'].value
   pageBody = open('data/' + pageId, 'r').read()
